@@ -1,4 +1,4 @@
-export const Producto = [
+const Data = [
   {
     id: 1,
     img: '/public/brownie.jpg',
@@ -38,4 +38,4 @@ export const Producto = [
   { id: 7, img: '/public/rogel.jpg', nombre: 'Rogel', precio: 2500 },
 ]
 
-// export default Producto
+export default Data;

@@ -1,11 +1,8 @@
 import Header from "./componentes/header/Header";
-// import Cards from "./componentes/menu/Cards";
+import ItemListContainer from "./componentes/menu/ItemListContainer";
 
-// import {Data} from "./Data";
 
 import "./componentes/header/header.css"
-
-
 
 
 
@@ -19,7 +16,7 @@ const App = () => {
     return(
         <>
         <Header nombre="NunZia" links={links}/>
-        {/* <Cards/> */}
+        <ItemListContainer/>
         </>
         )
 }
