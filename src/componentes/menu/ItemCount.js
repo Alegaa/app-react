@@ -31,9 +31,6 @@ const ItemCount=({stock, initial}) =>{
     
     return(
         <div>
-            <div>
-                <h4>Tarta de coco</h4>
-            </div>
         <p>Contador: {contador}</p>
         <button onClick={sumar}> + </button>
         <button onClick={restar}> - </button>

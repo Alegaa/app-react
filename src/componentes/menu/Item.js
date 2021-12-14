@@ -2,7 +2,7 @@ import React from 'react'
 import ItemCount from './ItemCount';
 
 
-const ItemListContainer = props =>{
+const Item = props =>{
     return(
         <div>
           <h2>{props.name}</h2>
@@ -11,4 +11,4 @@ const ItemListContainer = props =>{
        </div>
     )}
 
-export default ItemListContainer;
+export default Item;

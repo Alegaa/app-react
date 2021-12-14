@@ -1,8 +1,8 @@
 import React from 'react'
 
-import List from './List'
+import ItemList from './ItemList'
 
-const Container = () => {
+const ItemListContainer = () => {
 
   const DATA = [
   {id: 1,img: '/brownie.jpg',nombre: 'Brownie',precio: 2500,},
@@ -15,9 +15,9 @@ const Container = () => {
 ]
 return(
   <div>
-    <List data={DATA}/>
+    <ItemList data={DATA}/>
   </div>
 );
 };
-export default Container;
+export default ItemListContainer;
 
