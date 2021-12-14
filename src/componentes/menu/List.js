@@ -5,7 +5,9 @@ const List= props => {
     return(
         <div>
             {props.data.map(item => (
-                <ItemListContainer key={item.id} name={item.nombre}/>
+                <ItemListContainer key={item.id} name={item.nombre}>
+                
+                </ItemListContainer>
             ))}
         </div>
         )
