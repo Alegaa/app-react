@@ -1,8 +1,9 @@
 import React from 'react'
 import ItemCount from './ItemCount';
 
-const onAdd= () => {
+const onAdd= (cantidad) => {
     console.log("Agregar al carrito")
+    console.log("cantidad de items" + cantidad)
 }
 
 const Item = props =>{

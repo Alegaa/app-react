@@ -26,7 +26,7 @@ const ItemCount=({stock, initial, onAdd}) =>{
 
     }
     const agregarItem=()=>{
-        onAdd()
+        onAdd(contador)
     }
     
     return(
