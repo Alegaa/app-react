@@ -3,7 +3,7 @@ import React from "react";
 import {useState} from 'react';
 
 
-const ItemCount=({stock, initial}) =>{
+const ItemCount=({stock, initial, onAdd}) =>{
     let [contador, setContador]= useState(0);
 
     const sumar= () =>{
@@ -25,9 +25,9 @@ const ItemCount=({stock, initial}) =>{
         console.log("reinicia pedido")
 
     }
-    const onAdd= () =>{
-    console.log("Se incluyo al carrito")
-}
+    const agregarItem=()=>{
+        onAdd()
+    }
     
     return(
         <div>
@@ -36,7 +36,7 @@ const ItemCount=({stock, initial}) =>{
         <button onClick={restar}> - </button>
         <button onClick={vaciar}> vaciar </button>
         <div>
-         <button onClick={onAdd}>Agregar</button>
+         <button onClick={agregarItem}>Agregar</button>
         </div>
         </div>
     )

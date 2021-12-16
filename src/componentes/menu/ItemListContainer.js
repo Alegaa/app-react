@@ -2,6 +2,9 @@ import React from 'react'
 
 import ItemList from './ItemList'
 
+const onAdd= () => {
+  console.log("Se agrega al carrito")
+}
 const ItemListContainer = () => {
 
   const DATA = [

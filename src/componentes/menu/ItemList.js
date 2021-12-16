@@ -6,7 +6,6 @@ const ItemList= props => {
         <div>
             {props.data.map(item => (
                 <Item key={item.id} name={item.nombre} image={item.img}>
-                
                 </Item>
             ))}
         </div>
