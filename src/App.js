@@ -1,7 +1,8 @@
 import Header from "./componentes/header/Header";
 import ItemListContainer from "./componentes/menu/ItemListContainer";
-
+import ItemDetailContainer from "./componentes/menu/ItemDetailContainer";
 import "./componentes/header/header.css"
+
 
     const links = [
         { href: "#", name: "Información Útil", id: 1 },
@@ -15,6 +16,7 @@ const App = () => {
         <>
             <Header nombre="NunZia" links={links}/>
             <ItemListContainer/>
+            <ItemDetailContainer/>
         </>
         )
 }

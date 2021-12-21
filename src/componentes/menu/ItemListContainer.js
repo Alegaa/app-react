@@ -17,7 +17,7 @@ const ItemListContainer = () => {
   {id: 7, img: '/rogel.jpg', nombre: 'Rogel', precio: 2500 },
 ]) ,2000))}
 
-const [DATA, setProductos]=useState([]);
+const [getProductos, setProductos]=useState([]);
 useEffect(() => {
   promesa().then((info)=>{
     setProductos(info)
@@ -25,7 +25,7 @@ useEffect(() => {
 }, [])
 return(
   <div>
-    <ItemList data={DATA}/>
+    <ItemList data={getProductos}/>
   </div>
 )};
 export default ItemListContainer;
