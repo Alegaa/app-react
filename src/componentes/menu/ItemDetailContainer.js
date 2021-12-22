@@ -1,28 +1,27 @@
 import ItemDetail from "./ItemDetail"
 import { useState, useEffect} from 'react'
 
-const showProduct= {
-     nombre: 'Rogel',
-     precio: 2500
-}
+// const showProduct= {
+//      nombre: 'Rogel',
+//      precio: 2500
+// }
 const ItemDetailContainer = () =>{
-    const [producto, setProducto]= useState(null)
-    
-    useEffect(() => {
-    const getItem= new Promise((res, rej) =>{
-        setTimeout(() =>{
-            res(showProduct)
-        }, 2000)
-    })
-    getItem
-    .then((producto)=>{
-        setProducto(showProduct)
-    })
-    },)
-    
+
+const promesa= ()=>{
+     return new Promise((res,rej)=>
+      setTimeout(()=>
+      res({ nombre: 'Rogel',
+     precio: 2500}) ,2000))}
+
+const [getItem, setProductos]=useState({});
+useEffect(() => {
+  promesa().then((info)=>{
+    setProductos(info)
+  })
+}, [])
     return(
         <div>
-            <ItemDetail producto={producto} />
+            <ItemDetail producto={getItem} />
         </div>
     )
 }
