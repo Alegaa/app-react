@@ -4,3 +4,6 @@
 body {
   background-color: rgb(238,238,238);
 }
+main{
+  display: flex
+}

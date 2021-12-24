@@ -1,7 +1,7 @@
 .containerNav{
     display:flex;
     flex-direction: column;
-    justify-content:space-between
+    justify-content:center;
 
 }
 a{
@@ -10,4 +10,10 @@ a{
     margin: 1rem;
     padding: 1rem;
     
+}
+footer{
+    background-color:brown;
+}
+main{
+    display:flex
 }

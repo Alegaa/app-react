@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect} from 'react'
+// import { useParams } from "react-router-dom"
 import ItemList from './ItemList'
 
 const ItemListContainer = () => {
@@ -16,6 +17,10 @@ const ItemListContainer = () => {
   {id: 6,img: '/pasfrola.jpg',nombre: 'Pastafrola',precio: 2500,},
   {id: 7, img: '/rogel.jpg', nombre: 'Rogel', precio: 2500 },
 ]) ,2000))}
+
+// const {id}= useParams()
+//  console.log(id)
+
 
 const [getProductos, setProductos]=useState([]);
 useEffect(() => {

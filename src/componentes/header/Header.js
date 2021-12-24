@@ -1,18 +1,18 @@
-// import "./header.scss"
-const Header = ({ nombre, links }) => {
-    
+import CartWidget from "../cart/CartWiget"
+import {Link} from "react-router-dom"
 
+import "./header.css"
+const Header = ({ nombre, links }) => {
     return <>
-        <header>
-            <div>
-                {/* <img src="/img/Nunzia.png" alt="logo"/> */}
-            </div>
+        <header className="containerNav">
+            <Link to="Home">
             <h1>{nombre}</h1>
-            <nav className="containerNav">
+            </Link>
+            <nav >
                 {links.map((element) => {
-                    return <a key={element.id} href={element.href}>{element.name}</a>
+                    return <Link key={element.id} to={element.href}>{element.name}</Link>
                 })}
-                <span className="material-icons">shopping_cart</span>
+               <Link to="cart"><CartWidget/></Link>
             </nav>
         </header>
     </>
